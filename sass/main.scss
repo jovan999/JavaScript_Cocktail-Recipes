@@ -1,0 +1,124 @@
+$color-black: black;
+
+body {
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+
+.outline {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.side-bar{
+    display: flex;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  margin-bottom: 100px;
+  width: 300px;
+  height: 40px;
+  font-size: 24px;
+  padding: 5px 0px;
+  border: none;
+  outline: none;
+
+  border-radius: 8px;
+  text-align: center;
+
+  transition: all 0.2s;
+
+  &::placeholder {
+    font-size: 16px;
+    display: grid;
+  }
+
+  &:focus {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    transform: translateY(-5px);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-row-gap: 100px;
+  grid-column-gap: 150px;
+}
+
+.help {
+  display: grid;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.322);
+  border-radius: 30px;
+
+
+//   &:hover {
+//     transform: rotateY(180deg);
+//   }
+}
+
+.under_line {
+  display: flex;    
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+}
+
+.name {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.isAlcoholic {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.instructions__head {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  font-size: 16px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-row-gap: 10px;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+}
+
+.coctail_img {
+  width: 90%;
+  border-radius: 10px;
+
+  margin: auto;
+}
