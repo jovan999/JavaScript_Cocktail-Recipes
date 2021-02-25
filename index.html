@@ -3,12 +3,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Best Cocktails</title>
+    <link rel="icon" href="assets/logo.png" type="image/icon type" />
+
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
   </head>
   <body>
+    <div class="nav">
+      <div class="logo">
+        <img src="assets/logo.png" alt="" />
+      </div>
+
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="about.html">About Cocktails</a>
+        <a href="random.html">Our top 3</a>
+      </div>
+    </div>
+
     <div class="header">
-      <h1>Helou</h1>
+      <h1 class="ml9">
+        <span class="text-wrapper">
+          <span class="letters">Ready to make delicious Cocktails?</span>
+        </span>
+      </h1>
     </div>
 
     <div class="input">
@@ -16,7 +37,8 @@
         type="search"
         class="search-box"
         placeholder="
-        Search for the perfect cocktail..."
+        Search for best coctails..."
+        required
       />
     </div>
 
@@ -24,6 +46,8 @@
       <div class="container"></div>
     </div>
 
-    <script src="key.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>
