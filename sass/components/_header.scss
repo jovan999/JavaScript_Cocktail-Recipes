@@ -7,6 +7,14 @@
   .logo {
     img {
       width: 70%;
+
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      width: 20%;
     }
   }
 
@@ -16,6 +24,10 @@
       font-size: 2rem;
       color: white;
       margin-right: 5rem;
+
+      @media only screen and (max-width: 600px) {
+        margin-right: 2rem;
+      }
     }
   }
 }
@@ -28,6 +40,14 @@
     margin-bottom: 5rem;
     font-size: 3.6rem;
     letter-spacing: 5px;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 10rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-top: 5rem;
+    }
   }
 }
 

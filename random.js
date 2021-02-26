@@ -114,3 +114,11 @@ const random2 = async () => {
     });
 };
 random2();
+
+// on click show 3 random
+const row = document.querySelector(".row");
+const text = document.querySelector(".text_random");
+function showRandom() {
+  row.style.visibility = "visible";
+  text.style.margin = "0";
+}

@@ -16,7 +16,7 @@
 //   .then(response => response.json())
 //   .then(data => console.log(data));
 
-// Wrap every letter in a span
+// JS animation
 const textWrapper = document.querySelector(".ml9 .letters");
 textWrapper.innerHTML = textWrapper.textContent.replace(
   /\S/g,
@@ -45,15 +45,13 @@ const container = document.querySelector(".container");
 const name = document.querySelector(".name");
 const category = document.querySelector(".category");
 const instructions = document.querySelector(".instructions");
-const ing7 = document.querySelector(".ing7");
 const ing1 = document.querySelector(".ing1");
-
-const checkbox = document.querySelector(".checkbox");
+const ing7 = document.querySelector(".ing7");
 
 // input
 searchbox.addEventListener("input", () => search(searchbox.value));
 
-// fetch
+// fetch  
 const search = async query => {
   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`)
     .then(response => response.json())
@@ -95,7 +93,7 @@ function dispAll(data) {
       <li> ${drink.strIngredient4} - ${drink.strMeasure4}</li>
       <li> ${drink.strIngredient5} - ${drink.strMeasure5}</li>
       <li> ${drink.strIngredient6} - ${drink.strMeasure6}</li>
-      <li class="ing7"> ${drink.strIngredient7} - ${drink.strMeasure7}</li>
+      <li> ${drink.strIngredient7} - ${drink.strMeasure7}</li>
     </div>
     </div>
   </div>
@@ -105,25 +103,3 @@ function dispAll(data) {
     .join();
   container.innerHTML = render;
 }
-
-
-// const checkboxes = document.querySelectorAll('input[name="color"]:checked');
-
-// let colors = [];
-// checkboxes.forEach(checkbox => {
-//   colors.push(checkbox.value);
-// });
-
-// function getSelectedCheckboxValues(name) {
-//   const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
-//   let values = [];
-//   checkboxes.forEach(checkbox => {
-//     values.push(checkbox.value);
-//   });
-//   return values;
-// }
-
-// const btn = document.querySelector("#btn");
-// btn.addEventListener("click", event => {
-//   alert(getSelectedCheckboxValues("color"));
-// });
