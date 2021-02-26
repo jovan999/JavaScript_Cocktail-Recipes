@@ -17,7 +17,7 @@
 //   .then(data => console.log(data));
 
 // Wrap every letter in a span
-var textWrapper = document.querySelector(".ml9 .letters");
+const textWrapper = document.querySelector(".ml9 .letters");
 textWrapper.innerHTML = textWrapper.textContent.replace(
   /\S/g,
   "<span class='letter'>$&</span>"
@@ -39,8 +39,6 @@ anime
     easing: "easeOutExpo",
     delay: 1000,
   });
-
-// ScrollReveal().reveal(".container");
 
 const searchbox = document.querySelector(".search-box");
 const container = document.querySelector(".container");
@@ -108,44 +106,6 @@ function dispAll(data) {
   container.innerHTML = render;
 }
 
-// const image = document.querySelector(".image");
-// const nameRandom = document.querySelector(".name_random");
-// const coctailImg = document.querySelector(".coctail_img-random");
-// const isAlcoholic = document.querySelector(".isAlcoholic-random");
-// const categoryRandom = document.querySelector(".category-random");
-// const instructionsRandom = document.querySelector(".instructions-random");
-// const ing1Random = document.querySelector(".ing1-random");
-// const ing2Random = document.querySelector(".ing2-random");
-// const ing3Random = document.querySelector(".ing3-random");
-// const ing4Random = document.querySelector(".ing4-random");
-// const ing5Random = document.querySelector(".ing5-random");
-// const ing6Random = document.querySelector(".ing6-random");
-// const ing7Random = document.querySelector(".ing7-random");
-
-// const randomE = async () => {
-//   fetch(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
-//     .then(response => response.json())
-//     .then(data => {
-//       (nameRandom.innerHTML = data.drinks[0].strDrink),
-//         (isAlcoholic.innerHTML = data.drinks[0].strAlcoholic),
-//         (categoryRandom.innerHTML = data.drinks[0].strCategory),
-//         (instructionsRandom.innerHTML = data.drinks[0].strInstructions),
-//         (ing1Random.innerHTML = data.drinks[0].strIngredient1),
-//         (ing2Random.innerHTML = data.drinks[0].strIngredient2),
-//         (ing3Random.innerHTML = data.drinks[0].strIngredient3),
-//         (ing4Random.innerHTML = data.drinks[0].strIngredient4),
-//         (ing5Random.innerHTML = data.drinks[0].strIngredient5),
-//         (ing6Random.innerHTML = data.drinks[0].strIngredient6),
-//         (ing7Random.innerHTML = data.drinks[0].strIngredient7);
-
-//       const renderRandom = `<img src="${data.drinks[0].strDrinkThumb}"class="coctail_img"/>`;
-//       image.innerHTML = renderRandom;
-//     })
-//     .catch(error => {
-//       console.error(error);
-//     });
-// };
-// randomE();
 
 // const checkboxes = document.querySelectorAll('input[name="color"]:checked');
 

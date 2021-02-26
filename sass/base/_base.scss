@@ -12,7 +12,10 @@ html {
 }
 
 body {
-  background-image: url(../assets/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/background-min.jpg);
   background-position: top;
   background-size: contain;
+  font-family: "Akaya Kanadaka", cursive;
+  height: 100vh;
 }

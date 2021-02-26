@@ -12,9 +12,11 @@ html {
 }
 
 body {
-  background-image: url(../assets/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/background-min.jpg);
   background-position: top;
   background-size: contain;
+  font-family: "Akaya Kanadaka", cursive;
+  height: 100vh;
 }
 
 .nav {
@@ -39,6 +41,7 @@ body {
   margin-top: 20rem;
   margin-bottom: 5rem;
   font-size: 3.6rem;
+  letter-spacing: 5px;
 }
 
 .input {
@@ -50,16 +53,17 @@ body {
 .search-box {
   margin-bottom: 10rem;
   width: 40rem;
-  height: 4.5rem;
+  height: 5rem;
   font-size: 2.4rem;
-  padding: 0.5rem 3rem;
+  text-align: center;
   border: none;
   outline: none;
   border-radius: 8px;
+  font-family: inherit;
   transition: all 0.2s;
 }
 .search-box::placeholder {
-  font-size: 16px;
+  font-size: 2rem;
   display: grid;
 }
 .search-box:focus {
@@ -93,12 +97,6 @@ body {
   margin: auto;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.637);
-}
-
-.random {
-  display: flex;
-  background-color: red;
 }
 
 .container {
@@ -107,10 +105,10 @@ body {
   grid-row-gap: 500px;
   grid-column-gap: 100px;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.637);
 }
 
-.name,
-.name_random {
+.name {
   font-size: 2.4rem;
   text-align: center;
   font-weight: bold;
@@ -118,15 +116,13 @@ body {
   color: white;
 }
 
-.coctail_img,
-.coctail_img-random {
+.coctail_img {
   width: 90%;
   border-radius: 10px;
   margin: auto;
 }
 
-.under_line,
-.under_line-random {
+.under_line {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -136,8 +132,7 @@ body {
   color: white;
 }
 
-.instructions__head,
-.instructions__head-random {
+.instructions__head {
   text-align: center;
   font-size: 24px;
   margin-bottom: 10px;
@@ -145,8 +140,7 @@ body {
   color: white;
 }
 
-.instructions,
-.instructions-random {
+.instructions {
   font-size: 16px;
   text-align: center;
   width: 70%;
@@ -201,6 +195,117 @@ li {
 .card:hover .card__side--back {
   transform: rotateY(0);
   width: 100%;
+}
+
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/background-about-min.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: inherit;
+}
+
+.about_main h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+.about_main p {
+  color: white;
+  font-size: 2rem;
+  width: 60%;
+  margin: 5rem auto;
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.about_main-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about_main-art .video {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+.about_main-art .video video {
+  width: 100%;
+}
+.about_main-art .txt p {
+  margin-bottom: 0;
+}
+
+.main_random {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/background-random-min.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-random {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.random {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name_random {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 1.5rem 0;
+  color: white;
+}
+
+.image {
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+.image img {
+  width: 100%;
+}
+
+.under_line-random {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.instructions__head-random {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: white;
+}
+
+.instructions-random {
+  font-size: 16px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.list-random {
+  list-style: none;
+}
+.list-random li {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
