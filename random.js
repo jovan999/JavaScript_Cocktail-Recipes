@@ -118,7 +118,12 @@ random2();
 // on click show 3 random
 const row = document.querySelector(".row");
 const text = document.querySelector(".text_random");
+const randomText = document.querySelector(".random_txt");
+const btnRandom = document.querySelector(".random_btn");
+
 function showRandom() {
   row.style.visibility = "visible";
   text.style.margin = "0";
+  randomText.style.visibility = "visible"
+  btnRandom.style.display = "none";
 }

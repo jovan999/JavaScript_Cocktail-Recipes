@@ -42,20 +42,18 @@ anime
 
 const searchbox = document.querySelector(".search-box");
 const container = document.querySelector(".container");
-const name = document.querySelector(".name");
-const category = document.querySelector(".category");
-const instructions = document.querySelector(".instructions");
-const ing1 = document.querySelector(".ing1");
-const ing7 = document.querySelector(".ing7");
 
 // input
 searchbox.addEventListener("input", () => search(searchbox.value));
 
-// fetch  
+// fetch
 const search = async query => {
   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`)
     .then(response => response.json())
-    .then(data => dispAll(data))
+    .then(data => {
+      dispAll(data);
+      console.log(data);
+    })
     .catch(error => {
       console.error(error);
     });
@@ -87,13 +85,41 @@ function dispAll(data) {
       <div class="instructions">${drink.strInstructions}</div>
       <div class="instructions__head">What do you need:</div>
       <div class="list">
-      <li class="ing1"> ${drink.strIngredient1} - ${drink.strMeasure1}</li>
-      <li> ${drink.strIngredient2} - ${drink.strMeasure2}</li>
-      <li> ${drink.strIngredient3} - ${drink.strMeasure3}</li>
-      <li> ${drink.strIngredient4} - ${drink.strMeasure4}</li>
-      <li> ${drink.strIngredient5} - ${drink.strMeasure5}</li>
-      <li> ${drink.strIngredient6} - ${drink.strMeasure6}</li>
-      <li> ${drink.strIngredient7} - ${drink.strMeasure7}</li>
+      <li> ${
+        drink.strIngredient1 !== null
+          ? drink.strIngredient1 + "-" + drink.strMeasure1
+          : ""
+      }</li>
+      <li> ${
+        drink.strIngredient2 !== null
+          ? drink.strIngredient2 + "-" + drink.strMeasure2
+          : ""
+      }</li>
+      <li> ${
+        drink.strIngredient3 !== null
+          ? drink.strIngredient3 + "-" + drink.strMeasure3
+          : ""
+      }</li>
+      <li> ${
+        drink.strIngredient4 !== null
+          ? drink.strIngredient4 + "-" + drink.strMeasure4
+          : ""
+      }</li>
+      <li> ${
+        drink.strIngredient4 !== null
+          ? drink.strIngredient5 + "-" + drink.strMeasure5
+          : ""
+      }</li>
+      <li> ${
+        drink.strIngredient6 !== null
+          ? drink.strIngredient6 + "-" + drink.strMeasure6
+          : ""
+      }</li>
+      <li> ${
+        drink.strIngredient7 !== null
+          ? drink.strIngredient7 + "-" + drink.strMeasure7
+          : ""
+      }</li>
     </div>
     </div>
   </div>
