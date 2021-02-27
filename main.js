@@ -106,7 +106,7 @@ function dispAll(data) {
           : ""
       }</li>
       <li> ${
-        drink.strIngredient4 !== null
+        drink.strIngredient5 !== null
           ? drink.strIngredient5 + "-" + drink.strMeasure5
           : ""
       }</li>
