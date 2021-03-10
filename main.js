@@ -42,6 +42,7 @@ anime
 
 const searchbox = document.querySelector(".search-box");
 const container = document.querySelector(".container");
+const footer = document.querySelector(".footer");
 
 // input
 searchbox.addEventListener("input", () => search(searchbox.value));
@@ -62,6 +63,7 @@ const search = async query => {
     container.style.visibility = "hidden";
   } else {
     container.style.visibility = "visible";
+    footer.style.visibility = "hidden";
   }
 };
 
